@@ -38,7 +38,7 @@ def f(x):
 
 ::: {.callout-tip}
 - Text notebooks can have metadata (but no outputs)
-- Multiline comments also works for Markdown
+- Markdown cells can be either commented text or multiline strings
 :::
 
 ## Why text notebooks?
@@ -116,7 +116,7 @@ Open existing text notebooks with a right click^[run `jupytext-config set-defaul
 - Announced 6 years ago (MIT license)
 - 30+ programming languages supported
 - 98 contributors
-- 6.874 GitHub stars
+- 6,874 GitHub stars
 - 1.3M downloads/month on PyPI
 
 ## Compatibility
@@ -125,7 +125,7 @@ Jupytext is compatible with the following stacks
 
 - Jupyter Lab, Notebook, Hub etc.
 - Jupyter Book and especially MyST Markdown
-- VS Code: `# %%` scripts (community extension)
+- VS Code: `# %%` scripts, sync through plugin
 - Spyder, VIM (plugin), any editor
 - Quarto (`.qmd`) and RStudio (`.Rmd`), Pandoc
-- pre-commit
+- pre-commit framework, and more generally code QA tools
