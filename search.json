@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "slides.html#jupyter-notebooks",
+    "href": "slides.html#jupyter-notebooks",
+    "title": "",
+    "section": "Jupyter notebooks",
+    "text": "Jupyter notebooks\nNotebooks are amazing for research! And tutorials 😉\n\nThe .ipynb format (JSON) may be a bit verbose but overall it is simple, robust and well documented.\n\nJupytext: edit1 your notebooks as .py files2\nor store, convert, synchronize etc.many more formats are available, including .md"
+  },
+  {
+    "objectID": "slides.html#text-notebooks",
+    "href": "slides.html#text-notebooks",
+    "title": "",
+    "section": "Text notebooks",
+    "text": "Text notebooks\nContent is almost what you typed!\n# %% [markdown]\n# This is a markdown cell\n\n# %%\ndef f(x):\n  return 3*x+1\n\n\n\n\n\n\n\nTip\n\n\n\nText notebooks can have metadata (but no outputs)\nMultiline comments also works for Markdown"
+  },
+  {
+    "objectID": "slides.html#why-text-notebooks",
+    "href": "slides.html#why-text-notebooks",
+    "title": "",
+    "section": "Why text notebooks?",
+    "text": "Why text notebooks?\n\nWell suited for version control\nEdit and run your notebooks in your IDE\nTurn your notebooks into libraries\nQuality assurance: pre-commit, ruff, typing etc. just work\n\n\n\n\n\n\n\nTip\n\n\nText only notebooks are a good fit for\n\ndocs (use the MyST Markdown format)\nand for tutorials (use the py:percent format)"
+  },
+  {
+    "objectID": "slides.html#paired-notebooks-edit-in-jupyter",
+    "href": "slides.html#paired-notebooks-edit-in-jupyter",
+    "title": "",
+    "section": "Paired notebooks (edit in Jupyter)",
+    "text": "Paired notebooks (edit in Jupyter)\nIn general you want paired notebooks. A paired notebook is made of two files:\n\nnotebook.ipynb is your usual notebook\nnotebook.py is the text version\n\n\nOpen either file in Jupyter (they are the same document).\nBoth files get updated when you save the notebook."
+  },
+  {
+    "objectID": "slides.html#paired-notebooks-edit-in-ide",
+    "href": "slides.html#paired-notebooks-edit-in-ide",
+    "title": "",
+    "section": "Paired notebooks (edit in IDE)",
+    "text": "Paired notebooks (edit in IDE)\nOpen notebook.py in your IDE and edit it. Then re-open the notebook in Jupyter (or reload it), and you will see the edits!\n\nInput cells are loaded from the .py script\nOutput cells are loaded from the .ipynb file.\n\n\n\n\n\n\n\nTip\n\n\nTo force the synchronization outside of Jupyter, use either jupytext --sync, our pre-commit hook, or the community-maintained plugins for VIM and VS Code"
+  },
+  {
+    "objectID": "slides.html#installation",
+    "href": "slides.html#installation",
+    "title": "",
+    "section": "Installation",
+    "text": "Installation\n\npip install jupytext or conda install jupytext -c conda-forge\nRestart your Jupyter server\n\n\nNow .py and .md files have a notebook icon, and you get a Jupytext sub-menu in Jupyter 🎉"
+  },
+  {
+    "objectID": "slides.html#creating-paired-notebooks",
+    "href": "slides.html#creating-paired-notebooks",
+    "title": "",
+    "section": "Creating paired notebooks",
+    "text": "Creating paired notebooks\nPair one notebook using the Jupytext Menu:\n\nPair all notebooks in the current and child folders with a jupytext.toml file containing e.g. formats=\"ipynb,py\""
+  },
+  {
+    "objectID": "slides.html#creating-text-notebooks",
+    "href": "slides.html#creating-text-notebooks",
+    "title": "",
+    "section": "Creating text notebooks",
+    "text": "Creating text notebooks\nCreate text only notebooks with the New Text Notebook menu.\n\nOpen existing text notebooks with a right click1\nrun jupytext-config set-default-viewer python markdown to open .py and .md files as notebooks by default"
+  },
+  {
+    "objectID": "slides.html#jupytext-stats",
+    "href": "slides.html#jupytext-stats",
+    "title": "",
+    "section": "Jupytext Stats",
+    "text": "Jupytext Stats\n\nAnnounced 6 years ago (MIT license)\n30+ programming languages supported\n98 contributors\n6.874 GitHub stars\n1.3M downloads/month on PyPI"
+  },
+  {
+    "objectID": "slides.html#compatibility",
+    "href": "slides.html#compatibility",
+    "title": "",
+    "section": "Compatibility",
+    "text": "Compatibility\nJupytext is compatible with the following stacks\n\nJupyter Lab, Notebook, Hub etc.\nJupyter Book and especially MyST Markdown\nVS Code: # %% scripts (community extension)\nSpyder, VIM (plugin), any editor\nQuarto (.qmd) and RStudio (.Rmd), Pandoc\npre-commit"
+  }
+]
