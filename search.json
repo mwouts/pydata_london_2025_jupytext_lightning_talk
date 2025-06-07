@@ -11,7 +11,7 @@
     "href": "slides.html#text-notebooks",
     "title": "",
     "section": "Text notebooks",
-    "text": "Text notebooks\nContent is almost what you typed!\n# %% [markdown]\n# This is a markdown cell\n\n# %%\ndef f(x):\n  return 3*x+1\n\n\n\n\n\n\n\nTip\n\n\n\nText notebooks can have metadata (but no outputs)\nMultiline comments also works for Markdown"
+    "text": "Text notebooks\nContent is almost what you typed!\n# %% [markdown]\n# This is a markdown cell\n\n# %%\ndef f(x):\n  return 3*x+1\n\n\n\n\n\n\n\nTip\n\n\n\nText notebooks can have metadata (but no outputs)\nMarkdown cells can be either commented text or multiline strings"
   },
   {
     "objectID": "slides.html#why-text-notebooks",
@@ -60,13 +60,13 @@
     "href": "slides.html#jupytext-stats",
     "title": "",
     "section": "Jupytext Stats",
-    "text": "Jupytext Stats\n\nAnnounced 6 years ago (MIT license)\n30+ programming languages supported\n98 contributors\n6.874 GitHub stars\n1.3M downloads/month on PyPI"
+    "text": "Jupytext Stats\n\nAnnounced 6 years ago (MIT license)\n30+ programming languages supported\n98 contributors\n6,874 GitHub stars\n1.3M downloads/month on PyPI"
   },
   {
     "objectID": "slides.html#compatibility",
     "href": "slides.html#compatibility",
     "title": "",
     "section": "Compatibility",
-    "text": "Compatibility\nJupytext is compatible with the following stacks\n\nJupyter Lab, Notebook, Hub etc.\nJupyter Book and especially MyST Markdown\nVS Code: # %% scripts (community extension)\nSpyder, VIM (plugin), any editor\nQuarto (.qmd) and RStudio (.Rmd), Pandoc\npre-commit"
+    "text": "Compatibility\nJupytext is compatible with the following stacks\n\nJupyter Lab, Notebook, Hub etc.\nJupyter Book and especially MyST Markdown\nVS Code: # %% scripts, sync through plugin\nSpyder, VIM (plugin), any editor\nQuarto (.qmd) and RStudio (.Rmd), Pandoc\npre-commit framework, and more generally code QA tools"
   }
 ]
