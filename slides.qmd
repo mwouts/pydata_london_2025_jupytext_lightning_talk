@@ -1,0 +1,131 @@
+---
+pagetitle: Jupytext
+footer: "Jupytext: Text notebooks that you will love, by Marc Wouts. PyData London, June 8, 2025"
+standalone: true
+format:
+  revealjs:
+    logo: images/jupytext_logo.svg
+---
+
+![](images/jupytext_logo.svg){width=80%}
+
+## Jupyter notebooks
+
+Notebooks are amazing for research! And tutorials 😉
+
+<br>
+
+The `.ipynb` format (JSON) may be a bit verbose but overall it is simple, robust and well documented.
+
+<br>
+
+Jupytext: edit^[or store, convert, synchronize etc.] your notebooks as `.py` files^[many more formats are available, including `.md`]
+
+## Text notebooks
+
+Content is almost what you typed!
+
+```python
+# %% [markdown]
+# This is a markdown cell
+
+# %%
+def f(x):
+  return 3*x+1
+```
+
+<br>
+
+::: {.callout-tip}
+- Text notebooks can have metadata (but no outputs)
+- Multiline comments also works for Markdown
+:::
+
+## Why text notebooks?
+
+- Well suited for version control
+- Edit and run your notebooks in your IDE
+- Turn your notebooks into libraries
+- Quality assurance: `pre-commit`, `ruff`, typing etc. just work
+
+::: {.callout-tip}
+Text only notebooks are a good fit for
+
+- docs (use the MyST Markdown format)
+- and for tutorials (use the `py:percent` format)
+:::
+
+## Paired notebooks (edit in Jupyter)
+
+In general you want _paired_ notebooks. A paired notebook is made of two files:
+
+- `notebook.ipynb` is your usual notebook
+- `notebook.py` is the text version
+
+<br>
+
+Open either file in Jupyter (they are the same document).
+
+Both files get updated when you save the notebook.
+
+## Paired notebooks (edit in IDE)
+
+Open `notebook.py` in your IDE and edit it. Then re-open the notebook in Jupyter (or reload it), and you will see the edits! 
+
+<br>
+
+Input cells are loaded from the `.py` script
+
+Output cells are loaded from the `.ipynb` file.
+
+<br>
+
+::: {.callout-tip}
+To force the synchronization outside of Jupyter, use either `jupytext --sync`,
+our pre-commit hook, or the community-maintained plugins for VIM and VS Code
+:::
+
+## Installation
+
+- `pip install jupytext` or <br>`conda install jupytext -c conda-forge`
+- Restart your Jupyter server
+
+<br>
+
+Now `.py` and `.md` files have a notebook icon, and you get a Jupytext sub-menu in Jupyter 🎉
+
+## Creating paired notebooks
+
+Pair one notebook using the Jupytext Menu:
+
+![](images/jupytext_menu.png){.nostretch width=50% height=50%}
+
+Pair all notebooks in the current and child folders with a `jupytext.toml` file 
+containing e.g. `formats="ipynb,py"`
+
+## Creating text notebooks 
+
+Create text only notebooks with the _New Text Notebook_ menu.
+
+![](images/new_text_notebook_menu.png){.nostretch width=80% height=80%}
+
+Open existing text notebooks with a right click^[run `jupytext-config set-default-viewer python markdown` to open `.py` and `.md` files as notebooks by default]
+
+## Jupytext Stats
+
+- Announced 6 years ago (MIT license)
+- 30+ programming languages supported
+- 98 contributors
+- 6.874 GitHub stars
+- 1.3M downloads/month on PyPI
+
+## Compatibility
+
+Jupytext is compatible with the following stacks
+
+- Jupyter Lab, Notebook, Hub etc.
+- Jupyter Book and especially MyST Markdown
+- VS Code: `# %%` scripts (community extension)
+- Spyder, VIM (plugin), any editor
+- Quarto (`.qmd`) and RStudio (`.Rmd`), Pandoc
+- pre-commit
