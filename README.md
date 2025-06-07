@@ -1,7 +1,5 @@
 # ⚡ Jupytext ⚡
 
-Lightning talk at PyData London - 8 June 2025
+This are the slides for my lightning talk at PyData London - 8 June 2025.
 
-Compile the slides with `quarto render slides.qmd`.
-
-Read the slides only at [TODO: github.io]
+View the slides online at https://mwouts.github.io/pydata_london_2025_jupytext_lightning_talk, or compile them locally with `quarto publish`.
